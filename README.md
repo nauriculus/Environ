@@ -6,11 +6,11 @@
     Environ is a defi management platform that leverages squads multisignature wallets , seamless EUROe integration and investment strategies using Kamino. Environ empowers users to collectively pursue their savings within the Solana ecosystem.
     <br />
     <br />
-    <a href="https://binaramics.com:3333">Live Demo</a>
+    <a href="https://binaramics.com:4343">Live Demo</a>
     ·
     <a href="https://twitter.com/Binaramics">Follow Us X</a>
      ·
-    <a href="">Demo Video</a>
+    <a href="https://www.youtube.com/watch?v=yqv72ZnhZpY&t=1s">Demo Video</a>
   </p>
 </div>
 
