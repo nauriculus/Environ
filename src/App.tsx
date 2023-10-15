@@ -49,20 +49,32 @@ const data = [
   ['2016', 1030, 540],
 ];
 
-const generateDummyData = () => {
-  const data = [['Date', 'Inflow', 'Outflow']];
+const generateDummyData = (): (string | number)[][] => {
+  const data: (string | number)[][] = [['Date', 'Inflow', 'Outflow']];
   const startDate = new Date('2023-10-01');
-  for (let i = 0; i < 17; i++) {
-    const date = new Date(startDate);
-    date.setDate(startDate.getDate() + i);
+  for (let i = 0; i < 6; i++) {
+    const randomDate = generateRandomDate(startDate, 30); // 30 days range
+    const formattedDate = formatDateToChartFormat(randomDate);
     const inflow = Math.floor(Math.random() * 10);
     const outflow = Math.floor(Math.random() * 5);
-    data.push([date, inflow, outflow]);
+    data.push([formattedDate, inflow, outflow]);
   }
   return data;
 };
 
+function generateRandomDate(startDate: Date, rangeInDays: number): Date {
+  const randomDay = Math.floor(Math.random() * rangeInDays);
+  const randomDate = new Date(startDate);
+  randomDate.setDate(startDate.getDate() + randomDay);
+  return randomDate;
+}
 
+function formatDateToChartFormat(date: Date): string {
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
 
 const options = {
   title: 'EuroE Vault Balance',
@@ -70,26 +82,21 @@ const options = {
     title: 'Date',
     titleTextStyle: { color: '#333' },
     textStyle: { color: '#666' },
+    gridlines: { color: 'transparent' } // Combine gridlines with hAxis
   },
   vAxis: {
     title: 'Amount (EuroE)',
     titleTextStyle: { color: '#333' },
     textStyle: { color: '#666' },
     minValue: 0,
+    gridlines: { color: 'transparent' } // Combine gridlines with vAxis
   },
   chartArea: { width: '70%', height: '70%' },
   backgroundColor: '#f5f5f5',
   legend: { position: 'top', alignment: 'center' },
   colors: ['#3366CC', '#DC3912'],
   curveType: 'function',
-  lineWidth: 2,
-  // Set gridlines to null to remove background grid lines
-  hAxis: {
-    gridlines: { color: 'transparent' }
-  },
-  vAxis: {
-    gridlines: { color: 'transparent' }
-  }
+  lineWidth: 2
 };
 
 const Portal = () => {
