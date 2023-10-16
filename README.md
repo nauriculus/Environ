@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://camo.githubusercontent.com/53efec2abd246bc1a006387519391689efe5d8419792278c0f0965685c972440/68747470733a2f2f62696e6172616d6963732e636f6d2f456e7669726f6e2e706e67" alt="Logo" width="240">
+  <img src="https://binaramics.com/Environ.png" alt="Logo" width="240">
 
   <p align="center">
     <br>
