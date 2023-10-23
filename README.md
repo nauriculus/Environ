@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://binaramics.com/Environ.png" alt="Logo" width="240">
+  <img src="https://github.com/nauriculus/Environ/assets/24634581/6a3ee540-1bbb-489a-8615-ddb7268549cc" alt="Logo" width="240">
 
   <p align="center">
     <br>
