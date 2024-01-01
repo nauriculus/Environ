@@ -16,7 +16,7 @@
 
 ## Key Features
 
-- **Multisignature Wallets**: Environ prioritizes security with multisignature wallets, utilizing Squads for advanced security features.
+- **Multisignature Wallets**: Environ prioritizes security with multisignature wallets, utilizing Squads V4 for advanced security features.
 
 - **Goal Tracking**: Set and monitor your financial goals, tracking your progress and ensuring you're on the right path to financial success.
 
